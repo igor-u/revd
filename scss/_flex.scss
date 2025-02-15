@@ -12,11 +12,11 @@ collection {
 }
 
 group {
-    padding: 5px;
+    padding: calc(var.$pad-gap / 2);
     display: grid;
     grid-template-columns: var.$pad-size var.$pad-size var.$pad-size;
     grid-template-rows: var.$pad-size var.$pad-size var.$pad-size; 
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: var.$pad-gap;
+    row-gap: var.$pad-gap;
     animation: 2s slide infinite linear;
 }
