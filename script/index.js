@@ -1,7 +1,6 @@
 import { flipColors, multiplyNode } from "./function.js";
 
-const aColors = ["black", "purple"];
-
 multiplyNode(document.querySelector('.pad-a'), 8);
+multiplyNode(document.querySelector('group'), 6);
 
-flipColors("a", aColors);
+flipColors("a", ["black", "purple"]);

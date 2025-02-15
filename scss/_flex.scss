@@ -1,15 +1,22 @@
 @use 'var';
 
-body {
+@keyframes slide {
+    from {transform: translateX(-30%);}
+
+    to {transform: translateX(-130%);}
+}
+
+collection {
+    transform: var.$pad-perspective;
     display: flex;
-    justify-content: center;
 }
 
 group {
+    padding: 5px;
     display: grid;
     grid-template-columns: var.$pad-size var.$pad-size var.$pad-size;
     grid-template-rows: var.$pad-size var.$pad-size var.$pad-size; 
     column-gap: 10px;
     row-gap: 10px;
-    transform: perspective(800px) rotate3d(1, 0, 0, 60deg);
+    animation: 2s slide infinite linear;
 }

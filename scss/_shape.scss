@@ -3,6 +3,7 @@
 %pad-style {
     width: var.$pad-size;
     height: var.$pad-size;
+    background-color: purple;
     &:hover {
         filter: brightness(150%);
     }

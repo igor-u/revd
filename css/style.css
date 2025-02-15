@@ -1,27 +1,39 @@
 body {
   background-color: black;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .pad-a {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  background-color: purple;
 }
 .pad-a:hover {
   filter: brightness(150%);
 }
 
-body {
+@keyframes slide {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(-130%);
+  }
+}
+collection {
+  transform: perspective(800px) rotate3d(1, 0, 0, 60deg);
   display: flex;
-  justify-content: center;
 }
 
 group {
+  padding: 5px;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
   column-gap: 10px;
   row-gap: 10px;
-  transform: perspective(800px) rotate3d(1, 0, 0, 60deg);
+  animation: 2s slide infinite linear;
 }
 
 /*# sourceMappingURL=style.css.map */
