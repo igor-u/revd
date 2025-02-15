@@ -1,4 +1,13 @@
-.square {
-    height: 200px;
-    width: 200px;
+@use 'var';
+
+%pad-style {
+    width: var.$pad-size;
+    height: var.$pad-size;
+    &:hover {
+        filter: brightness(150%);
+    }
+}
+
+.pad-a {
+    @extend %pad-style;
 }

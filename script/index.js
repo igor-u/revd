@@ -1,16 +1,7 @@
-function applyFlashingColors() {
-    const squares = document.querySelectorAll(".square");
-    const colors = ["green", "red", "blue", "yellow"];
+import { flipColors, multiplyNode } from "./function.js";
 
-    let colorIndex = 0;
+const aColors = ["black", "purple"];
 
-    setInterval(() => {
-        squares.forEach(square => {
-            square.style.backgroundColor = colors[colorIndex];
-            colorIndex = (colorIndex + 1) % colors.length;
-        });
+multiplyNode(document.querySelector('.pad-a'), 8);
 
-    }, 1500);
-}
-
-applyFlashingColors();
+flipColors("a", aColors);

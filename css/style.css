@@ -2,9 +2,26 @@ body {
   background-color: black;
 }
 
-.square {
-  height: 200px;
+.pad-a {
   width: 200px;
+  height: 200px;
+}
+.pad-a:hover {
+  filter: brightness(150%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+group {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  column-gap: 10px;
+  row-gap: 10px;
+  transform: perspective(800px) rotate3d(1, 0, 0, 60deg);
 }
 
 /*# sourceMappingURL=style.css.map */
