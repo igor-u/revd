@@ -1,11 +1,10 @@
-export function flipColors(which, colors) {
-    const squares = document.querySelectorAll(".pad-" + which);
+export function flipColors(colors) {
+    const squares = document.querySelectorAll(".pad");
 
     let colorIndex = 0;
 
     setInterval(() => {
         squares.forEach(square => {
-            square.style.borderColor = colors[colorIndex];
             square.style.backgroundColor = colors[colorIndex];
             colorIndex = (colorIndex + 1) % colors.length;
         });

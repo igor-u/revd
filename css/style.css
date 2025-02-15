@@ -4,12 +4,12 @@ body {
   white-space: nowrap;
 }
 
-.pad-a {
+.pad {
   width: 100px;
   height: 100px;
   background-color: purple;
 }
-.pad-a:hover {
+.pad:hover {
   filter: brightness(150%);
 }
 

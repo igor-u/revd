@@ -1,14 +1,10 @@
 @use 'var';
 
-%pad-style {
+.pad {
     width: var.$pad-size;
     height: var.$pad-size;
     background-color: var.$pad-color;
     &:hover {
         filter: brightness(150%);
     }
-}
-
-.pad-a {
-    @extend %pad-style;
 }
