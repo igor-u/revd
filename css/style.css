@@ -7,7 +7,7 @@ body {
 .pad {
   width: 100px;
   height: 100px;
-  background-color: purple;
+  border: solid transparent;
 }
 .pad:hover {
   filter: brightness(150%);
@@ -21,12 +21,21 @@ body {
     transform: translateX(-130%);
   }
 }
-collection {
+.pad-collection {
   transform: perspective(800px) rotate3d(1, 0, 0, 60deg);
   display: flex;
 }
+.pad-collection:before {
+  content: "";
+  position: absolute;
+  border: solid rgb(0, 80, 80);
+  top: 50%;
+  left: -30%;
+  width: 130%;
+  height: 100%;
+}
 
-group {
+.pad-group {
   padding: 5px;
   display: grid;
   grid-template-columns: 100px 100px 100px;

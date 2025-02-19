@@ -1,12 +1,13 @@
-export function flipColors(colors) {
+export function flipColors(colors, shadow) {
     const pads = document.querySelectorAll(".pad");
 
-    let colorIndex = 0;
+    let index = 0;
 
     setInterval(() => {
         pads.forEach(pad => {
-            pad.style.backgroundColor = colors[colorIndex];
-            colorIndex = (colorIndex + 1) % colors.length;
+            pad.style.borderColor = colors[index];
+            pad.style.boxShadow = `inset 0 0 ${shadow[index]} 0 rgb(0, 80, 80), 0 0 ${shadow[index]} 0 rgb(0, 80, 80)`;
+            index = (index + 1) % colors.length;
         });
 
     }, 1000);

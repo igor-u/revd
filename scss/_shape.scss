@@ -3,7 +3,8 @@
 .pad {
     width: var.$pad-size;
     height: var.$pad-size;
-    background-color: var.$pad-color;
+    border: solid transparent;
+
     &:hover {
         filter: brightness(150%);
     }
