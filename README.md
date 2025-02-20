@@ -8,7 +8,7 @@ This project demonstrates a simple animation built using JavaScript for logic an
 
 ## Description
 
-The animation simulates a continuously looping dance pad with multiple 3x3 grids. Each grid dynamically changes colors, ensuring no two adjacent squares within the same grid display the same color at the same time.
+The animation simulates a continuously looping dance pad with multiple 3x3 grids. Each grid dynamically changes colors, ensuring no two adjacent squares display the same color at the same time.
 
 ## Technologies Used
 
